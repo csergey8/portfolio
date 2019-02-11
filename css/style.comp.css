@@ -1,0 +1,144 @@
+/*
+COLORS
+
+Primary: #E15D44
+Primary light: #B892FF;
+Primary dark: #43365D;
+
+Grey light 1: #faf9f9
+Grey light 2: #f4f2f2
+Grey light 3: #f0eeee
+Grey light 4: #ccc
+
+Grey dark 1: #333
+Grey dark 2: #777
+Grey dark 3: #999
+
+*/
+:root {
+  --color-primary: #E15D44;
+  --color-primary-light: #e67b65;
+  --color-primary-dark: #c53c20;
+  --color-font: #221B2F;
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-4: #ccc;
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+  --line: 1px solid var(--color-grey-light-1);
+  --shadow-light: 0 2rem 5rem rgba(0,0,0,.06); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+@font-face {
+  font-family: Gotham;
+  font-weight: bold;
+  src: url("../fonts/GothaProBol.otf") format("opentype"); }
+
+@font-face {
+  font-family: Gotham;
+  font-weight: normal;
+  src: url("../fonts/GothaProReg.otf") format("opentype"); }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  height: 100%; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  font-family: 'Gotham', sans-serif;
+  font-weight: normal;
+  line-height: 1.6;
+  color: var(--color-font);
+  height: 100%;
+  min-height: 100vh; }
+
+@font-face {
+  font-family: Gotham;
+  font-weight: bold;
+  src: url("../fonts/GothaProBol.otf") format("opentype"); }
+
+.container {
+  max-width: 130rem;
+  margin: 4rem auto; }
+  @media only screen and (max-width: 75em) {
+    .container {
+      margin: 0;
+      max-width: 100%;
+      width: 100%; } }
+
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 1rem;
+  transition: all .2s;
+  position: relative;
+  font-size: 1.6rem;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border: none;
+  cursor: pointer; }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh; }
+  .header span {
+    color: var(--color-primary-light); }
+  .header__text {
+    font-size: 3rem;
+    position: relative;
+    bottom: 20rem; }
+    .header__text--title {
+      font-weight: normal; }
+    .header__text--second {
+      font-weight: normal;
+      width: 70%;
+      margin-bottom: 3rem; }
+  .header__logos {
+    align-self: flex-end;
+    position: relative;
+    bottom: 3rem; }
+    .header__logos i {
+      margin: 0 2rem; }
+  .header__logo--fixed {
+    position: fixed;
+    top: 4rem;
+    right: 10rem; }
+
+.fa-js-square {
+  color: #F0DB4F; }
+
+.fa-react {
+  color: #61DAFB; }
+
+.fa-html5 {
+  color: #E44D26; }
+
+.fa-css3-alt {
+  color: #0170BA; }
+
+.fa-linux {
+  color: #000000; }
+
+.fa-node {
+  color: #8CC84B; }
+
+.projects__title {
+  font-size: 5rem; }
