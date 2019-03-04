@@ -1,3 +1,5 @@
 fonts/*
 img/*
 node_modules/
+css/
+*.css

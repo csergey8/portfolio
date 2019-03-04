@@ -16,9 +16,9 @@ Grey dark 3: #999
 
 */
 :root {
-  --color-primary: #E15D44;
-  --color-primary-light: #e67b65;
-  --color-primary-dark: #c53c20;
+  --color-primary: #4A748A;
+  --color-primary-light: rgb(88, 109, 121);
+  --color-primary-dark: #4A748A;
   --color-font: #221B2F;
   --color-grey-light-1: #faf9f9;
   --color-grey-light-3: #f0eeee;
@@ -68,8 +68,23 @@ body {
 
 @font-face {
   font-family: Gotham;
-  font-weight: bold;
+  font-weight: 600;
   src: url("../fonts/GothaProBol.otf") format("opentype"); }
+
+@font-face {
+  font-family: Gotham;
+  font-weight: 100;
+  src: url("../fonts/GothaProLig.otf") format("opentype"); }
+
+@font-face {
+  font-family: Gotham;
+  font-weight: 400;
+  src: url("../fonts/GothaProMed.otf") format("opentype"); }
+
+@font-face {
+  font-family: Gotham;
+  font-weight: 300;
+  src: url("../fonts/GothaProReg.otf") format("opentype"); }
 
 .container {
   max-width: 130rem;
@@ -85,60 +100,34 @@ body {
   text-decoration: none;
   padding: 1.5rem 4rem;
   display: inline-block;
-  border-radius: 1rem;
+  border-radius: 3rem;
   transition: all .2s;
   position: relative;
   font-size: 1.6rem;
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-light);
   color: #ffffff;
   border: none;
-  cursor: pointer; }
+  user-select: none;
+  cursor: pointer;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+  transition: all .6s; }
+  .btn:hover, .btn:link:hover, .btn:visited:hover {
+    box-shadow: 4px 10px 17px rgba(0, 0, 0, 0.4);
+    bottom: 1px;
+    background-color: var(--color-primary); }
+  .btn:active, .btn:link:active, .btn:visited:active {
+    top: 1px; }
 
-.header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh; }
-  .header span {
-    color: var(--color-primary-light); }
-  .header__text {
-    font-size: 3rem;
-    position: relative;
-    bottom: 20rem; }
-    .header__text--title {
-      font-weight: normal; }
-    .header__text--second {
-      font-weight: normal;
-      width: 70%;
-      margin-bottom: 3rem; }
-  .header__logos {
-    align-self: flex-end;
-    position: relative;
-    bottom: 3rem; }
-    .header__logos i {
-      margin: 0 2rem; }
-  .header__logo--fixed {
-    position: fixed;
-    top: 4rem;
-    right: 10rem; }
+.header__title {
+  font-size: 6rem;
+  text-transform: uppercase;
+  margin-top: 10rem; }
 
-.fa-js-square {
-  color: #F0DB4F; }
-
-.fa-react {
-  color: #61DAFB; }
-
-.fa-html5 {
-  color: #E44D26; }
-
-.fa-css3-alt {
-  color: #0170BA; }
-
-.fa-linux {
-  color: #000000; }
-
-.fa-node {
-  color: #8CC84B; }
-
-.projects__title {
-  font-size: 5rem; }
+.rhombus {
+  position: absolute;
+  transform: rotate(45deg);
+  border-radius: 1.2rem; }
+  .rhombus__header {
+    background: var(--color-primary);
+    width: 50rem;
+    height: 50rem; }

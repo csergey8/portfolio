@@ -1,0 +1,11 @@
+.rhombus {
+  position: absolute;
+  transform: rotate(45deg);
+  border-radius: 1.2rem;
+  &__header {
+    background: var(--color-primary);
+    width: 50rem;
+    height: 50rem;
+
+  }
+}
