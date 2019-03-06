@@ -2,10 +2,27 @@
   position: absolute;
   transform: rotate(45deg);
   border-radius: 1.2rem;
+  z-index: -1;
   &__header {
     background: var(--color-primary);
-    width: 50rem;
-    height: 50rem;
+    width: 60rem;
+    height: 60rem;
+    top: -20rem;
+    left: 12rem;
+  }
 
+  &__main--first {
+    background: black;
+    width: 23rem;
+    height: 23rem;
+    bottom: -5rem;
+    right: -11rem;
+  }
+
+  &__main--second {
+    background: var(--color-primary);
+    width: 12rem;
+    height: 12rem;
+    right: 23rem;
   }
 }

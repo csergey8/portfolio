@@ -1,1 +1,189 @@
-:root{--color-primary: #4A748A;--color-primary-light: rgb(88, 109, 121);--color-primary-dark: #4A748A;--color-font: #221B2F;--color-grey-light-1: #faf9f9;--color-grey-light-3: #f0eeee;--color-grey-light-2: #f4f2f2;--color-grey-light-4: #ccc;--color-grey-dark-1: #333;--color-grey-dark-2: #777;--color-grey-dark-3: #999;--shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);--line: 1px solid var(--color-grey-light-1);--shadow-light: 0 2rem 5rem rgba(0,0,0,.06)}*{margin:0;padding:0}*,*::before,*::after{-webkit-box-sizing:inherit;box-sizing:inherit}@font-face{font-family:Gotham;font-weight:bold;src:url("../fonts/GothaProBol.otf") format("opentype")}@font-face{font-family:Gotham;font-weight:normal;src:url("../fonts/GothaProReg.otf") format("opentype")}html{-webkit-box-sizing:border-box;box-sizing:border-box;font-size:62.5%;height:100%}@media only screen and (max-width: 68.75em){html{font-size:50%}}body{font-family:'Gotham', sans-serif;font-weight:normal;line-height:1.6;color:var(--color-font);height:100%;min-height:100vh}@font-face{font-family:Gotham;font-weight:600;src:url("../fonts/GothaProBol.otf") format("opentype")}@font-face{font-family:Gotham;font-weight:100;src:url("../fonts/GothaProLig.otf") format("opentype")}@font-face{font-family:Gotham;font-weight:400;src:url("../fonts/GothaProMed.otf") format("opentype")}@font-face{font-family:Gotham;font-weight:300;src:url("../fonts/GothaProReg.otf") format("opentype")}.container{max-width:130rem;margin:4rem auto}@media only screen and (max-width: 75em){.container{margin:0;max-width:100%;width:100%}}.btn,.btn:link,.btn:visited{text-transform:uppercase;text-decoration:none;padding:1.5rem 4rem;display:inline-block;border-radius:3rem;-webkit-transition:all .2s;transition:all .2s;position:relative;font-size:1.6rem;background-color:var(--color-primary-light);color:#ffffff;border:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer;-webkit-box-shadow:0px 5px 8px rgba(0,0,0,0.2);box-shadow:0px 5px 8px rgba(0,0,0,0.2);-webkit-transition:all .6s;transition:all .6s}.btn:hover,.btn:link:hover,.btn:visited:hover{-webkit-box-shadow:4px 10px 17px rgba(0,0,0,0.4);box-shadow:4px 10px 17px rgba(0,0,0,0.4);bottom:1px;background-color:var(--color-primary)}.btn:active,.btn:link:active,.btn:visited:active{top:1px}.header__title{font-size:6rem;text-transform:uppercase;margin-top:10rem}.rhombus{position:absolute;-webkit-transform:rotate(45deg);transform:rotate(45deg);border-radius:1.2rem}.rhombus__header{background:var(--color-primary);width:50rem;height:50rem}
+/*
+COLORS
+
+Primary: #E15D44
+Primary light: #B892FF;
+Primary dark: #43365D;
+
+Grey light 1: #faf9f9
+Grey light 2: #f4f2f2
+Grey light 3: #f0eeee
+Grey light 4: #ccc
+
+Grey dark 1: #333
+Grey dark 2: #777
+Grey dark 3: #999
+
+*/
+:root {
+  --color-primary: #4A748A;
+  --color-primary-light: rgb(88, 109, 121);
+  --color-primary-dark: #4A748A;
+  --color-font: #221B2F;
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-2: #F0F0F0;
+  --color-grey-light-4: #ccc;
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+  --line: 1px solid var(--color-grey-light-1);
+  --shadow-light: 0 2rem 5rem rgba(0,0,0,.06); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+@font-face {
+  font-family: Gotham;
+  font-weight: bold;
+  src: url("../fonts/GothaProBol.otf") format("opentype"); }
+
+@font-face {
+  font-family: Gotham;
+  font-weight: normal;
+  src: url("../fonts/GothaProReg.otf") format("opentype"); }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  height: 100%; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  font-family: 'Gotham', sans-serif;
+  font-weight: normal;
+  line-height: 1.6;
+  color: var(--color-font);
+  height: 100%;
+  min-height: 100vh; }
+
+@font-face {
+  font-family: Gotham;
+  font-weight: 600;
+  src: url("../fonts/GothaProBol.otf") format("opentype"); }
+
+@font-face {
+  font-family: Gotham;
+  font-weight: 100;
+  src: url("../fonts/GothaProLig.otf") format("opentype"); }
+
+@font-face {
+  font-family: Gotham;
+  font-weight: 400;
+  src: url("../fonts/GothaProMed.otf") format("opentype"); }
+
+@font-face {
+  font-family: Gotham;
+  font-weight: 300;
+  src: url("../fonts/GothaProReg.otf") format("opentype"); }
+
+.container {
+  max-width: 110rem;
+  margin: 1rem auto; }
+
+.btn-primary {
+  color: red;
+  background-color: red; }
+
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 1rem;
+  transition: all .2s;
+  position: relative;
+  font-size: 1.6rem;
+  color: #ffffff;
+  border: none;
+  user-select: none;
+  cursor: pointer;
+  width: 15rem;
+  height: 8rem;
+  outline: none;
+  transition: all .6s ease-in-out; }
+  .btn:hover, .btn:link:hover, .btn:visited:hover {
+    background-color: var(--color-primary);
+    width: 19rem;
+    height: 10rem; }
+  .btn:active, .btn:link:active, .btn:visited:active {
+    top: 1px; }
+
+.white-line {
+  width: 4rem;
+  height: 7px;
+  margin-top: 1rem;
+  background: #fff; }
+
+.fa-arrow-right {
+  display: inline-block;
+  font-size: 1.6rem;
+  margin-left: 1rem; }
+
+.header {
+  position: relative;
+  height: 70vh; }
+  .header__menu {
+    display: flex;
+    width: 40%;
+    justify-content: space-around; }
+    .header__menu--item {
+      font-size: 2rem; }
+  .header__contact {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0px;
+    display: inline-block;
+    margin-top: 5rem; }
+  .header__title {
+    margin-top: 10rem; }
+    .header__title--text {
+      font-size: 7rem;
+      text-transform: uppercase;
+      display: inline-block; }
+
+.projects__title {
+  line-height: 1;
+  font-size: 15rem;
+  color: var(--color-grey-light-2); }
+
+.rhombus {
+  position: absolute;
+  transform: rotate(45deg);
+  border-radius: 1.2rem;
+  z-index: -1; }
+  .rhombus__header {
+    background: var(--color-primary);
+    width: 60rem;
+    height: 60rem;
+    top: -20rem;
+    left: 12rem; }
+  .rhombus__main--first {
+    background: black;
+    width: 23rem;
+    height: 23rem;
+    bottom: -5rem;
+    right: -11rem; }
+  .rhombus__main--second {
+    background: var(--color-primary);
+    width: 12rem;
+    height: 12rem;
+    right: 23rem; }
+
+.about__title {
+  line-height: 1;
+  font-size: 15rem;
+  color: var(--color-grey-light-2); }
+
+.about__text {
+  font-size: 5rem; }

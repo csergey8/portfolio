@@ -22,7 +22,7 @@ Grey dark 3: #999
   --color-font: #221B2F;
   --color-grey-light-1: #faf9f9;
   --color-grey-light-3: #f0eeee;
-  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-2: #F0F0F0;
   --color-grey-light-4: #ccc;
   --color-grey-dark-1: #333;
   --color-grey-dark-2: #777;
@@ -87,47 +87,82 @@ body {
   src: url("../fonts/GothaProReg.otf") format("opentype"); }
 
 .container {
-  max-width: 130rem;
-  margin: 4rem auto; }
-  @media only screen and (max-width: 75em) {
-    .container {
-      margin: 0;
-      max-width: 100%;
-      width: 100%; } }
+  max-width: 110rem;
+  margin: 1rem auto; }
+
+.btn-primary {
+  color: red;
+  background-color: red; }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
   display: inline-block;
-  border-radius: 3rem;
+  border-radius: 1rem;
   transition: all .2s;
   position: relative;
   font-size: 1.6rem;
-  background-color: var(--color-primary-light);
   color: #ffffff;
   border: none;
   user-select: none;
   cursor: pointer;
-  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
-  transition: all .6s; }
+  width: 15rem;
+  height: 8rem;
+  outline: none;
+  transition: all .6s ease-in-out; }
   .btn:hover, .btn:link:hover, .btn:visited:hover {
-    box-shadow: 4px 10px 17px rgba(0, 0, 0, 0.4);
-    bottom: 1px;
-    background-color: var(--color-primary); }
+    background-color: var(--color-primary);
+    width: 19rem;
+    height: 10rem; }
   .btn:active, .btn:link:active, .btn:visited:active {
     top: 1px; }
 
-.header__title {
-  font-size: 6rem;
-  text-transform: uppercase;
-  margin-top: 10rem; }
+.white-line {
+  width: 4rem;
+  height: 7px;
+  margin-top: 1rem;
+  background: #fff; }
+
+.fa-arrow-right {
+  display: inline-block;
+  font-size: 1.6rem;
+  margin-left: 1rem; }
+
+.header {
+  position: relative;
+  height: 70vh; }
+  .header__menu {
+    display: flex;
+    width: 40%;
+    justify-content: space-around; }
+    .header__menu--item {
+      font-size: 2rem; }
+  .header__contact {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0px;
+    display: inline-block;
+    margin-top: 5rem; }
+  .header__title {
+    margin-top: 10rem; }
+    .header__title--text {
+      font-size: 7rem;
+      text-transform: uppercase;
+      display: inline-block; }
 
 .rhombus {
   position: absolute;
   transform: rotate(45deg);
-  border-radius: 1.2rem; }
+  border-radius: 1.2rem;
+  z-index: -1; }
   .rhombus__header {
     background: var(--color-primary);
-    width: 50rem;
-    height: 50rem; }
+    width: 60rem;
+    height: 60rem;
+    top: -20rem;
+    left: 12rem; }
+
+.about__title {
+  font-size: 40rem; }
