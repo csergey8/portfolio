@@ -25,4 +25,26 @@
     height: 12rem;
     right: 23rem;
   }
+
+  &__link {
+    background: var(--color-primary);
+    width: 7rem;
+    height: 7rem;
+    right: 2rem;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    & i {
+      color: #fff;
+      font-size: 3.5rem;
+      transform: rotate(-45deg);
+      position: relative;
+      bottom: 2px;
+      right: 5px;
+    }
+  }
 }

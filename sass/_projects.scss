@@ -1,7 +1,55 @@
 .projects {
+
+  &__grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
   &__title {
     line-height: 1;
     font-size: 15rem;
     color: var(--color-grey-light-2);
+  }
+
+  &__item {
+    width: 30%;
+    height: 37rem;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 4rem;
+
+
+    &--block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &--list {
+      list-style: none;
+      padding: 2rem;
+      font-size: 1.8rem;
+    }
+
+    &:hover {
+      cursor: pointer;
+      img {
+        transform: scale(1.2);
+        filter: blur(0);
+      }
+    }
+
+
+    &--img {
+      height: 20rem;
+      width: 33rem;
+      transition: transform .4s ease;
+      //filter: blur(1px);
+
+      &:hover {
+        
+      }
+    }
   }
 }

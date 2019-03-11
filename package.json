@@ -22,6 +22,7 @@
     "postcss-cli": "^4.1.1"
   },
   "dependencies": {
+    "hover.css": "^2.3.2",
     "npm": "^5.7.1"
   }
 }
