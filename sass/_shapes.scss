@@ -12,7 +12,7 @@
   }
 
   &__main--first {
-    background: black;
+    background: var(--color-secondary);
     width: 23rem;
     height: 23rem;
     bottom: -5rem;
@@ -26,11 +26,36 @@
     right: 23rem;
   }
 
-  &__link {
+  &__about--first {
     background: var(--color-primary);
+    width: 14rem;
+    height: 14rem;
+    left: -4rem;
+    top: 19rem;
+  }
+
+  &__about--second {
+    background: var(--color-primary);
+    width: 5rem;
+    height: 5rem;
+    right: 2rem;
+    bottom: 4rem;
+  }
+
+  &__about--third {
+    background: var(--color-secondary);
     width: 7rem;
     height: 7rem;
-    right: 2rem;
+    right: 20rem;
+    top: 25rem;
+
+  }
+
+  &__link {
+    background: linear-gradient(to bottom, #6ff3e1, #00d2f5, #00abff, #0079ff, #531de7);
+    width: 7rem;
+    height: 7rem;
+    right: 5rem;
 
     position: relative;
     display: flex;

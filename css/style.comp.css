@@ -16,9 +16,11 @@ Grey dark 3: #999
 
 */
 :root {
-  --color-primary: #4A748A;
+  --color-primary: rgb(111, 243, 225);
   --color-primary-light: rgb(88, 109, 121);
   --color-primary-dark: #4A748A;
+  --color-secondary: rgb(83, 29, 231);
+  --color-third: rgb(223, 96, 142);
   --color-font: #221B2F;
   --color-grey-light-1: #faf9f9;
   --color-grey-light-3: #f0eeee;
@@ -65,6 +67,10 @@ body {
   color: var(--color-font);
   height: 100%;
   min-height: 100vh; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
 
 @font-face {
   font-family: Gotham;
@@ -168,7 +174,8 @@ body {
   border: 1px solid #ddd;
   border-radius: 15px;
   overflow: hidden;
-  margin-top: 4rem; }
+  margin-top: 4rem;
+  transition: all 1s ease-in-out; }
   .projects__item--block {
     display: flex;
     justify-content: space-between;
@@ -181,7 +188,8 @@ body {
     cursor: pointer; }
     .projects__item:hover img {
       transform: scale(1.2);
-      filter: blur(0); }
+      filter: blur(0);
+      height: 22rem; }
   .projects__item--img {
     height: 20rem;
     width: 33rem;
@@ -199,7 +207,7 @@ body {
     top: -20rem;
     left: 12rem; }
   .rhombus__main--first {
-    background: black;
+    background: var(--color-secondary);
     width: 23rem;
     height: 23rem;
     bottom: -5rem;
@@ -209,11 +217,29 @@ body {
     width: 12rem;
     height: 12rem;
     right: 23rem; }
-  .rhombus__link {
+  .rhombus__about--first {
     background: var(--color-primary);
+    width: 14rem;
+    height: 14rem;
+    left: -4rem;
+    top: 19rem; }
+  .rhombus__about--second {
+    background: var(--color-primary);
+    width: 5rem;
+    height: 5rem;
+    right: 2rem;
+    bottom: 4rem; }
+  .rhombus__about--third {
+    background: var(--color-secondary);
     width: 7rem;
     height: 7rem;
-    right: 2rem;
+    right: 20rem;
+    top: 25rem; }
+  .rhombus__link {
+    background: linear-gradient(to right top, #6ff3e1, #00d2f5, #00abff, #0079ff, #531de7);
+    width: 7rem;
+    height: 7rem;
+    right: 5rem;
     position: relative;
     display: flex;
     align-items: center;
@@ -226,13 +252,14 @@ body {
       bottom: 2px;
       right: 5px; }
 
-.about__title {
-  line-height: 1;
-  font-size: 15rem;
-  color: var(--color-grey-light-2); }
-
-.about__text {
-  font-size: 5rem; }
+.about {
+  position: relative; }
+  .about__title {
+    line-height: 1;
+    font-size: 15rem;
+    color: var(--color-grey-light-2); }
+  .about__text {
+    font-size: 5rem; }
 
 .contact__title {
   line-height: 1;
