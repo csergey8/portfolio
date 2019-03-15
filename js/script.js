@@ -6,4 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
 var rellax = new Rellax('.rellax');
 
 
-var scroll = new SmoothScroll('a[href*="#"]');
+var scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 1200
+});
