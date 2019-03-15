@@ -22,9 +22,9 @@
             <div class="header__title">
                 <h1 class="header__title--text">Junior Web Developer</h1>
                 <nav class="header__menu">
-                    <div class="header__menu--item">about me</div>
-                    <div class="header__menu--item">my projects</div>
-                    <div class="header__menu--item">contact me</div>
+                    <a class="header__menu--item" data-scroll href="#about-me">about me</a>
+                    <a class="header__menu--item" data-scroll href="#my-projects">my projects</a>
+                    <a class="header__menu--item"  data-scroll href="#contact-me">contact me</a>
                 </nav>
             </div>
             <div class="rellax rhombus rhombus__main--first" data-rellax-speed="3" style="transform: translate3d(0px, -27px, 0px) rotate(45deg);"></div>
@@ -32,14 +32,14 @@
         </header>
     </div>
     <div class="container">
-        <section class="about">
+        <section class="about" id="about-me">
             <div class="rellax rhombus rhombus__about--first" data-rellax-speed="3" style="transform: translate3d(0px, -27px, 0px) rotate(45deg);"></div>
             <div class="rellax rhombus rhombus__about--second" data-rellax-speed="6" style="transform: translate3d(0px, -27px, 0px) rotate(45deg);"></div>
             <div class="rellax rhombus rhombus__about--third" data-rellax-speed="5" style="transform: translate3d(0px, -27px, 0px) rotate(45deg);"></div>
             <h1 class="about__title">about me</h1>
             <div class="rellax about__text" data-rellax-speed="2">Hi. I am junior web developer. I like <span class="color-pink">javascript</span>, <span class="color-pink">react</span> and <span class="color-pink">node</span>. I want to evolve both front and back parts of web development</div>
         </section>
-        <section class="projects">
+        <section class="projects" id="my-projects">
             <h1 class="projects__title">
                 my projects
             </h1>
@@ -130,7 +130,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact-me">
             <h1 class="contact__title">
                 contact me
             </h1>
@@ -141,6 +141,7 @@
     </div>
         
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.8.0/rellax.min.js"></script>
     <script src="/js/script.js"></script>
 </body>

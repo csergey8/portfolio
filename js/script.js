@@ -4,3 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 var rellax = new Rellax('.rellax');
+
+
+var scroll = new SmoothScroll('a[href*="#"]');
