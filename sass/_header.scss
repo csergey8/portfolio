@@ -10,7 +10,16 @@
       &--item {
         font-size: 2rem;
         cursor: pointer;
+        transition: color .2s linear;
+
+        &:hover {
+          color: var(--color-third);
+        }
       }
+    }
+
+    & i {
+      transition: all .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
 
     &__contact {
@@ -20,6 +29,15 @@
       letter-spacing: 0px;
       display: inline-block;
       margin-top: 5rem;
+      cursor: pointer;
+
+      &:hover {
+
+        & + i {
+          margin-left: 3rem;
+          color: white;
+        }
+      }
     }
     
     &__title {
