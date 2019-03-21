@@ -51,6 +51,14 @@
 
   }
 
+  &__contact {
+    background: var(--color-secondary);
+    width: 29rem;
+    height: 29rem;
+    right: 9rem;
+    top: 3rem;
+  }
+
   &__link {
     background: linear-gradient(to bottom, #6ff3e1, #00d2f5, #00abff, #0079ff, #531de7);
     width: 7rem;
@@ -63,7 +71,7 @@
     justify-content: center;
 
 
-    & i {
+     i {
       color: #fff;
       font-size: 3.5rem;
       transform: rotate(-45deg);

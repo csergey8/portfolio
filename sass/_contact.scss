@@ -1,6 +1,5 @@
 .contact {
-  position: relative;
-  top: -10rem;
+  margin-top: -6rem;
   &__title {
     line-height: 1;
     font-size: 15rem;
@@ -20,6 +19,13 @@
     &--color {
       color: var(--color-third);
       cursor: pointer;
+      transition: color .2s linear, text-decoration .9s ease;
+
+
+      &:hover {
+        color: var(--color-font);
+        text-decoration: underline;
+      }
     }
   }
 }
