@@ -59,8 +59,26 @@
     top: 3rem;
   }
 
+  &__contact--first {
+    background: var(--color-primary);
+    width: 39rem;
+    height: 39rem;
+    right: -25rem;
+    top: 25rem;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  &__contact--second {
+    background: var(--color-secondary);
+    width: 11rem;
+    height: 11rem;
+    left: -20rem;
+    top: 19rem;
+  }
+
   &__link {
-    background: linear-gradient(to bottom, #6ff3e1, #00d2f5, #00abff, #0079ff, #531de7);
+    background: linear-gradient(to bottom, var(--color-primary),var(--color-secondary));
     width: 7rem;
     height: 7rem;
     right: 5rem;
