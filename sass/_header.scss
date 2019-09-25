@@ -2,10 +2,23 @@
     position: relative;
     height: 50vh;
 
+    @media only screen and (max-width: 1200px) {
+      height: 40vh;
+    }
+
+  @media only screen and (max-width: 900px) {
+      height: 30vh;
+    }
+
     &__menu {
       display: flex;
       width: 40%;
       justify-content: space-around;
+
+      @media only screen and (max-width: 740px) {
+        width: 90%;
+        margin: 0 auto;
+      }
 
       &--item {
         font-size: 2rem;
@@ -47,6 +60,18 @@
       font-size: 7rem;
       text-transform: uppercase;
       display: inline-block;
+
+      @media only screen and (max-width: 740px) {
+        text-align: center;
+      }
+    }
+
+    @media only screen and (max-width: 740px) {
+      text-align: center;
+    }
+
+    @media only screen and (max-width: 440px) {
+      margin-top: 0;
     }
   }
 }

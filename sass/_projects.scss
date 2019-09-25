@@ -14,6 +14,10 @@
     line-height: 1;
     font-size: 15rem;
     color: var(--color-grey-light-2);
+
+    @media only screen and (max-width: 740px) {
+      text-align: center;
+    }
   }
 
   &__more {
@@ -28,6 +32,10 @@
       color: var(--color-font);
       transition: color .3s linear;
     }
+
+    @media only screen and (max-width: 440px) {
+      display: none;
+    }
   }
 
   &__item {
@@ -39,6 +47,10 @@
     overflow: hidden;
     margin-top: 4rem;
     transition: all 1s ease-in-out;
+
+    @media only screen and (max-width: 740px) {
+      width: 49%;
+    }
 
      i {
       transition: all .2s linear;
@@ -86,7 +98,10 @@
       width: 33rem;
       transition: transform .4s ease;
       //filter: blur(1px);
-
+      @media only screen and (max-width: 740px) {
+        width: 100%;
+        height: 50%;
+      }
       &:hover {
         
       }

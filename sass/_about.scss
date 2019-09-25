@@ -4,10 +4,22 @@
     line-height: 1;
     font-size: 15rem;
     color: var(--color-grey-light-2);
+
+    @media only screen and (max-width: 740px) {
+      text-align: center;
+    }
+
+    @media only screen and (max-width: 440px) {
+      display: none;
+    }
   }
 
   &__text {
     font-size: 5rem;
+
+    @media only screen and (max-width: 740px) {
+      text-align: center;
+    }
   }
 
   &__contact {

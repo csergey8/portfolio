@@ -9,6 +9,10 @@
     height: 60rem;
     top: -20rem;
     left: 12rem;
+
+    @media only screen and (max-width: 440px) {
+      display: none;
+    }
   }
 
   &__main--first {
@@ -17,6 +21,10 @@
     height: 23rem;
     bottom: -5rem;
     right: -11rem;
+
+    @media only screen and (max-width: 440px) {
+      display: none;
+    }
   }
 
   &__main--second {
@@ -67,6 +75,10 @@
     top: 25rem;
     overflow: hidden;
     z-index: -1;
+
+    @media only screen and (max-width: 740px) {
+      display: none;
+    }
   }
 
   &__contact--second {
